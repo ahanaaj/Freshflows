@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [freshflows]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.freshflows.utilities.Reporing"/>
+  </listeners>
+  <test thread-count="5" name="freshflows application(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.freshflows.testCases.TC_01">
+        <methods>
+          <include name="login"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.freshflows.testCases.TC_01 -->
+    </classes>
+  </test> <!-- freshflows application(failed) -->
+</suite> <!-- Failed suite [freshflows] -->
